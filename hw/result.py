@@ -37,7 +37,8 @@ with open(CSV_BOOKS_PATH) as f:
 # Подсчет количества книг на пользователя из расчета кол-во книг/кол-во юзеров через divmod
 total_users = len(users_list)
 total_books = len(books_list)
-books_per_user, extra_books = divmod(total_users, total_books)
+books_per_user, extra_books = divmod(total_books, total_users) #книги на пользователей
+
 
 
 id = 0
